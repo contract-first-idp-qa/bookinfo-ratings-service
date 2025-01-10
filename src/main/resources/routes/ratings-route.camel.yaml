@@ -1,14 +1,15 @@
 - rest:
+    id: rest-3578
     openApi:
       missingOperation: mock
       specification: ratings-api.json
 - route:
     id: sample-route
     from:
-      uri: direct:someOperationId
+      uri: direct:getProductRatings
       parameters: {}
       steps:
         - log:
-            message: "${body}"
+            message: ${body}
         - setBody:
             simple: '{"received": true }'
