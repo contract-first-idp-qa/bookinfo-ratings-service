@@ -9,11 +9,12 @@
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring-boot.version>3.3.3</spring-boot.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.3</version>
+        <version>${spring-boot.version}</version>
     </parent>
 
     <dependencies>
@@ -117,7 +118,7 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>${spring.boot-version}</version>
+          <version>${spring-boot.version}</version>
           <executions>
             <execution>
               <goals>
