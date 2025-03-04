@@ -1,0 +1,1 @@
+# Bookinfo Ratings Service
